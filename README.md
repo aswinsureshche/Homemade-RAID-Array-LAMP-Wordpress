@@ -1,15 +1,15 @@
 # RAID + LAMP WordPress Deployment
 
 ## Overview
-This project documents the configuration of a RAID storage array and the deployment of a WordPress website using a LAMP stack (Linux, Apache, MySQL, PHP). The focus is on storage reliability, server configuration, and hosting a dynamic web application in a Linux environment.
+This project documents the configuration of a RAID storage array and the deployment of a WordPress website using a LAMP stack (Linux, Apache, MariaDB/MySQL, PHP). The project focuses on storage redundancy, Linux server administration, and hosting a dynamic WordPress application.
 
 ## Architecture
-- **Storage:** RAID array providing redundancy and improved data reliability  
-- **Operating System:** Linux  
-- **Web Server:** Apache  
-- **Database:** MySQL  
-- **Application Layer:** PHP  
-- **CMS:** WordPress  
+- **Storage:** RAID Level 1 for data redundancy
+- **Operating System:** Linux
+- **Web Server:** Apache
+- **Database:** MariaDB
+- **Application Layer:** PHP
+- **CMS:** WordPress
 
 ## Project Files
 ```
@@ -18,32 +18,39 @@ architecture.md
 setup-notes.md
 
 screenshots/
-├── raid-configuration.png
-├── raid-status.png
-├── lsblk-output.png
-├── apache-status.png
-├── mysql-running.png
-├── wordpress-install.png
-├── wordpress-home.png
-└── wordpress-dashboard.png
-
-video/
-└── project-walkthrough.mp4
+├── Apache Install.png
+├── chmod permissions.png
+├── Database proof.png
+├── Level 1 RAID.png
+├── List of Files.png
+├── MariaDB Install.png
+├── mdadm.png
+├── Mounting RAID.png
+├── PHP Install.png
+├── PHP proof.png
+├── Raid proof.png
+├── sudo apt update.png
+├── Wordpress Setup.png
+├── Wordpress Setup 2.png
+├── Wordpress Setup 3.png
+└── Wordpress proof.png
 ```
 
 ## Screenshots
-Screenshots in the `screenshots/` directory document key stages of the build, including RAID creation, service validation, and the completed WordPress deployment.
+The `screenshots/` directory provides visual proof of each stage of the project, including RAID creation, service installation, permission configuration, database setup, and the completed WordPress deployment.
 
 ## Video Walkthrough
 A full walkthrough and explanation of the project is available here:  
 https://youtu.be/gVhz2t5baAg
 
 ## Key Concepts Demonstrated
-- RAID configuration and verification  
-- Linux server administration  
-- Apache and MySQL service management  
-- WordPress deployment on a LAMP stack  
-- Infrastructure documentation best practices  
+- RAID Level 1 configuration and mounting
+- Linux disk and file system management
+- Apache web server installation and validation
+- MariaDB database setup and verification
+- PHP installation and integration with Apache
+- WordPress deployment and permission management
+- Infrastructure documentation and verification
 
 ## Notes
-This repository focuses on documentation rather than source code. Configuration files, credentials, and database contents are intentionally excluded.
+This repository focuses on documentation rather than application source code. Configuration files, credentials, and database contents are intentionally excluded.
